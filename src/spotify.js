@@ -1,6 +1,6 @@
 // https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#
 
-// Redirect to // Get the first string login page
+// Redirect to spotify login page
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 // Redirect the user from spotify login page to home page of this website
