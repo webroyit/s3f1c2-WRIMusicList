@@ -5,3 +5,9 @@
 - 'ctrl B' to hide or open the sidebar of VSCode
 - 'ctrl J' to hide or open the terminial of VSCode
 - 'flex: (between 0 to 1)'
+- Hide Scrollbar
+```
+body::-webkit-scrollbar {
+  display: none;
+}
+```
