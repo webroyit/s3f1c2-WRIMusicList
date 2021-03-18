@@ -27,7 +27,7 @@ function App() {
       dispatch({
         type: 'SET_TOKEN',
         token: _token
-      })   
+      });
 
       spotify.setAccessToken(_token);       // Put the token inside the SpotifyWebApi
       
@@ -43,8 +43,15 @@ function App() {
         dispatch({
           type: 'SET_PLAYLISTS',
           playlists: playlists
-        })
-      })
+        });
+      });
+
+      spotify.getPlaylist("0x8HItIPIsZFvFEwq7N1xX").then(response => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: response
+        });
+      });
     }
   }, [])
 
