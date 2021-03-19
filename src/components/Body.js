@@ -16,7 +16,7 @@ function Body({ spotify }) {
             <Header spotify={spotify} />
 
             <div className="body__info">
-                <img src={discover_weekly?.images[0].url} alt="Banner" />
+                <img src={discover_weekly?.images[0]?.url} alt="Banner" />
                 <div className="body__infoText">
                     <strong>PLAYLIST</strong>
                     <h2>Discover Weekly</h2>
