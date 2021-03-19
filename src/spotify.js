@@ -4,7 +4,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 // Redirect the user from spotify login page to home page of this website
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://wrimusiclist.netlify.app/";
 
 const clientId = "";
 
