@@ -40,13 +40,14 @@ function App() {
       });
 
       spotify.getUserPlaylists().then(playlists => {
+        console.log(playlists)
         dispatch({
           type: 'SET_PLAYLISTS',
           playlists: playlists
         });
       });
 
-      spotify.getPlaylist("0x8HItIPIsZFvFEwq7N1xX").then(response => {
+      spotify.getPlaylist().then(response => {
         dispatch({
           type: 'SET_DISCOVER_WEEKLY',
           discover_weekly: response

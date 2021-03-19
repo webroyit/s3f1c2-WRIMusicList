@@ -1,9 +1,15 @@
 .body {
     flex: .8;
     height: 100vh;
-    padding: 30px;
+    padding: 30px 30px 100px 30px;
     color: white;
+    overflow-y: overlay;
     background: linear-gradient(#40656d, rgba(0, 0, 0, 1));
+
+}
+
+.body::-webkit-scrollbar {
+    display: none;
 }
 
 .body__info {

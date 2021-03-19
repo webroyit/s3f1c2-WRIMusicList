@@ -9,7 +9,7 @@ import SidebarOption from './SidebarOption';
 
 function Sidebar() {
     const [{ playlists }, dispatch] = useDataLayerValue();
-
+    console.log(playlists, "d")
     return (
         <div className="sidebar">
             <img
@@ -26,12 +26,8 @@ function Sidebar() {
             <hr />
 
             {playlists?.items?.map(playlist => (
-                <SidebarOption title={playlist} />
+                <SidebarOption title={playlist.name} />
             ))}
-
-            <SidebarOption title="Rock" />
-            <SidebarOption title="Jazz" />
-            <SidebarOption title="Metal" />
         </div>
     );
 }
